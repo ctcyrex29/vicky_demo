@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Vicky the Violinist</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header container">
+        <h1>Contact</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="music.html">Music</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container contact">
+        <h2>Contact</h2>
+        <p>Bookings, press and enquiries — use the email link below or drop a message via your preferred contact method.
+        </p>
+        <ul>
+            <li>Email: <a href="mailto:info@vickytheviolinist.example">info@vickytheviolinist.example</a> (replace with
+                real address)</li>
+            <li>Social: <a href="#">Instagram</a> • <a href="#">YouTube</a> • <a href="#">Facebook</a></li>
+        </ul>
+
+        <section id="booking" class="booking">
+            <h3>Book Vicky</h3>
+            <p>Vicky is available for weddings, birthdays, corporate events, private receptions and other occasions. Use
+                the form below to send a booking request — it will open your email client with a pre-filled message to
+                the booking address.</p>
+
+            <form id="bookingForm">
+                <label>Name<br><input type="text" name="name" required></label>
+                <label>Email<br><input type="email" name="email" required></label>
+                <label>Phone<br><input type="tel" name="phone"></label>
+                <label>Event type<br>
+                    <select name="eventType">
+                        <option>Wedding</option>
+                        <option>Birthday</option>
+                        <option>Corporate</option>
+                        <option>Private event</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>Event date<br><input type="date" name="eventDate"></label>
+                <label>Event time<br><input type="time" name="eventTime"></label>
+                <label>Location (city / venue)<br><input type="text" name="location"></label>
+                <label>Approx. duration<br>
+                    <select name="duration">
+                        <option>30 minutes</option>
+                        <option>45 minutes</option>
+                        <option>60 minutes</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label>Message / special requests<br><textarea name="message" rows="4"></textarea></label>
+                <button type="submit">Send Booking Request</button>
+            </form>
+
+            <p class="note">This booking form opens your email client (mailto) with a pre-filled subject and message. If
+                you prefer, I can wire a server-side endpoint (PHP/Node) or connect a form provider to accept requests
+                directly on the site.</p>
+        </section>
+
+        <hr>
+
+        <h3>Quick message (client-side only)</h3>
+        <form id="contactForm">
+            <label>Name<br><input type="text" name="name" required></label>
+            <label>Email<br><input type="email" name="email" required></label>
+            <label>Message<br><textarea name="message" rows="5" required></textarea></label>
+            <button type="submit">Send</button>
+        </form>
+        <p class="note">This contact form is a demo placeholder. To accept messages through the site, configure a server
+            endpoint or a form provider (Formspree, Netlify Forms) — I can set that up.</p>
+    </main>
+
+    <footer class="site-footer container">
+        <p><a href="index.html">Home</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
